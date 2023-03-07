@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Monda"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="temp-input">
+        <h1 style="font-size: 50px; color: yellow;">Temperature Converter</h1><hr><br><br><br>
+            <form>
+                <h2 style="color:white">Enter Temperature</h2>
+                <div class="temp-value">
+                    <input type="number" id="temperature" placeholder="Enter Temperature">
+
+                    <select id="from">
+                        <option value="select">--Select--</option>
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <div class="temp-result">
+            <h2 style="color:white; margin-left: 1rem;">Results </h2>
+            <div class="output">
+                <input type="text" placeholder="Celsius" id="resultC" value="0C">
+                <input type="text" placeholder="Fahrenheit" id="resultF" value="0F">
+                <input type="text" placeholder="Kelvin" id="resultK" value="0K">
+            </div>
+        </div>
+
+        <div class="convertBtn">
+            <button type="button" onclick="fConvert()">Convert</button>
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+</html>

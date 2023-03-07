@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Monda;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(images/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: rgba(.255, .255, .255, .9);
+    min-height: 70vh;
+    min-width: 30vw;
+    padding: 5rem;
+    border-radius: 40px;
+}
+
+.temp-input h1{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 55px;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.temp-input form{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.temp-value input, select{
+    text-align: center;
+    font-weight: bold;
+}
+
+.temp-result{
+    margin-top: 3rem;  
+}
+
+.temp-result .output{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.temp-result .output input{
+    margin: 0px 15px ;
+    width: 120px;
+    border-radius: 5px;
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.convertBtn{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.convertBtn button{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 30px;
+    color: white;
+    background-color: #f9004d;
+    border-radius: 30px;
+    transition: .4s;
+    border: 2px solid transparent;
+}
+
+.convertBtn button:hover{
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #f9004d;
+}
+
